@@ -6,7 +6,7 @@ hero:
   text: "源码解析"
   tagline: "NVIDIA 官方 LLM 推理加速引擎——从量化编译到 TensorRT 图优化深度剖析"
   image:
-    src: /logo.svg
+    src: /logo.png
     alt: TensorRT-LLM
   actions:
     - theme: brand
@@ -17,28 +17,24 @@ hero:
       link: https://github.com/NVIDIA/TensorRT-LLM
 
 features:
-  - icon: 🏗️
-    title: "第一部分：宏观认知"
-    details: "项目概览与设计哲学、Repo 结构全景，理解 TensorRT-LLM 在 NVIDIA 生态中的定位"
+  - icon:
+      src: /icons/architecture.svg
+    title: 系统架构全景
+    details: 解析 TensorRT-LLM 在 NVIDIA 生态中的定位，深入 Python 模型层、C++ Runtime、TensorRT Plugin 三层架构的协作关系。
     link: /chapters/01-overview
-  - icon: 🧩
-    title: "第二部分：模型定义层"
-    details: "Functional API、Module 抽象、Attention 实现、内置模型支持与权重转换"
+  - icon:
+      src: /icons/model.svg
+    title: 模型定义与权重转换
+    details: 剖析 Functional API、Module 抽象体系、内置模型实现与权重转换工具链，理解从 HuggingFace 到 TRT-LLM 格式的完整路径。
     link: /chapters/03-model-definition
-  - icon: ⚙️
-    title: "第三部分：编译与构建"
-    details: "trtllm-build 编译流程、TensorRT 插件体系、量化编译、Graph 优化"
+  - icon:
+      src: /icons/compile.svg
+    title: 编译与量化优化
+    details: 深入 trtllm-build 编译流程、TensorRT 插件体系、AWQ/GPTQ/FP8 量化编译与 Graph 优化，掌握推理图的构建与加速机制。
     link: /chapters/06-build-flow
-  - icon: 🚀
-    title: "第四部分：运行时"
-    details: "GenerationSession、C++ Runtime、Paged KV Cache、In-flight Batching"
+  - icon:
+      src: /icons/performance.svg
+    title: 高性能运行时
+    details: 覆盖 GenerationSession、Paged KV Cache、In-flight Batching、Tensor/Pipeline 并行与 Triton 服务化，理解 NVIDIA 推理引擎的生产级实现。
     link: /chapters/10-generation-session
-  - icon: 🌐
-    title: "第五部分：分布式推理"
-    details: "Tensor Parallelism、Pipeline Parallelism、多节点部署与 Triton 集成"
-    link: /chapters/14-tensor-parallelism
-  - icon: 🔧
-    title: "第六/七部分：服务与工具链"
-    details: "Triton Backend、OpenAI API 兼容、性能基准测试、选型对比"
-    link: /chapters/17-triton-backend
 ---
