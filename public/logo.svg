@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <rect width="200" height="200" rx="24" fill="#76b900"/>
+  <text x="100" y="90" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="36" fill="white">TRT</text>
+  <text x="100" y="130" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="28" fill="white">LLM</text>
+  <rect x="30" y="148" width="140" height="3" rx="1.5" fill="rgba(255,255,255,0.6)"/>
+  <text x="100" y="172" text-anchor="middle" font-family="Arial, sans-serif" font-weight="400" font-size="14" fill="rgba(255,255,255,0.9)">源码解析</text>
+</svg>
